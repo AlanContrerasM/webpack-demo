@@ -1,6 +1,9 @@
 "use strict";
 import _ from 'lodash';
 import {DisplayController, Player} from './myModule.js'
+import './reset.css';
+import './style.css';
+
 
 DisplayController.saySomething("HelloWorld");
 const alan = Player("Alan");
@@ -11,6 +14,7 @@ function component() {
   
     // Lodash, imported
     element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+    element.classList.add("hi");
   
     return element;
   }
